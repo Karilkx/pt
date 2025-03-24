@@ -1,0 +1,72 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    overflow: hidden;
+    margin: 0;
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#gif {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+#question {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.button-container {
+    position: relative;
+}
+
+.yes-button {
+    font-size: 20px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background: neon;
+    transition: 0.3s;
+}
+
+.yes-button:hover {
+    transform: scale(1.1);
+}
+
+#no-container button {
+    font-size: 16px;
+    padding: 8px 16px;
+    margin: 5px;
+    position: absolute;
+    border: none;
+    cursor: pointer;
+    background: red;
+    color: white;
+    transition: 0.3s;
+}
+
+#no-container button:hover {
+    transform: scale(1.1);
+}
+
+/* Rainbow Celebration */
+.celebration {
+    background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
+    animation: rainbow 1s infinite;
+}
+
+@keyframes rainbow {
+    0% { filter: hue-rotate(0deg); }
+    100% { filter: hue-rotate(360deg); }
+}
