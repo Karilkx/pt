@@ -1,0 +1,64 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    transition: background 1s;
+}
+
+#container {
+    position: relative;
+    height: 80vh;
+}
+
+#gif {
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+#yes {
+    font-size: 20px;
+    padding: 10px 20px;
+    background: neon;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    transition: 0.5s;
+}
+
+#yes:hover {
+    transform: scale(1.1);
+}
+
+/* No Button Styling */
+.no-button {
+    position: absolute;
+    font-size: 16px;
+    padding: 8px 16px;
+    background: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.no-button:hover {
+    transform: scale(1.1);
+}
+
+/* Celebration effect */
+.celebration {
+    background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+    animation: rainbow 3s infinite linear;
+}
+
+@keyframes rainbow {
+    0% { filter: hue-rotate(0deg); }
+    100% { filter: hue-rotate(360deg); }
+}
