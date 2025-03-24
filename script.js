@@ -1,6 +1,6 @@
 function acceptLove() {
     document.body.classList.add('celebration');
-    alert("YAY! 🎉🌈");
+    alert("🎉🌈");
 }
 
 function addNoButton() {
